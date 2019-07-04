@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gamja+Flower|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+</head>
+
+<body>
+
+    <nav class="sidenav">
+        <div class="logo">Jeju<sub class="sub">travel</sub></div>
+        <div class="weather">
+            <!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/jeju-32868"><img src="https://w.bookcdn.com/weather/picture/3_32868_1_1_232e3b_291_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=&anc_id=48038" alt="booked.net" /></a><!-- weather widget end -->
+        </div>
+        <div class="serve">
+            <fieldset>
+                <legend style="font-size: 40px;font-family: 'Concert One', cursive;">Jeju</legend>
+                <p>불과 물이 빚어낸 화산섬 제주도는 대한민국 최남단에 위치한 세계적인 휴양지입니다.</p>
+                <p>겨울에도 영상의 기온을 유지하는 온대 기후에 속하기 때문에 육지와 다른 아열대, 온대, 한대 식물이 공존하는 식물의 보고이기도 합니다.</p>
+                <p>많은 사람들이 제주도로 휴가를 떠나지만 그곳에서 꿈꾸는 휴가는 모두 제 각각이고 아주 다양합니다. 한라산 등반, 스쿠버 다이빙, 한적한 산사에서의 템플스테이, 올레길 산책, 식도락 여행, 박물관이나 공원 방문, 면세점 쇼핑 등 매우 다양합니다.</p>
+            </fieldset>
+        </div>
+    </nav>
+
+
+    <div class="content">
+        <!-- Top menu on small screens -->
+        <header class="headA">
+            <span>Jeju<sub class="sub">travel</sub></span>
+            <!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/jeju-32868"><img src="https://w.bookcdn.com/weather/picture/13_32868_1_1_bdd7f2_158_fff5d9_210421_4376ad_0_fff5d9_333333_0_6.png?scode=124&domid=&anc_id=21309" alt="booked.net" /></a><!-- weather widget end -->
+        </header>
+        <div class="row">
+
+            <a href="html/tour.html" class="column col1">관광명소</a>
+            <a href="html/food.html" class="column col2">제주맛집</a>
+            <a href="html/hotels.html" class="column col3">숙박업소</a>
+
+            <div class="container">
+                <fieldset>
+                    <legend>제주 축제</legend>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <img src="images/%EC%B6%95%EC%A0%9C1.jpg" alt="들불 축제" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>제주 들불축제</h3>
+                                    <p>2019.03.07~03.10</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/%EC%B6%95%EC%A0%9C2.jpg" alt="서귀포 유채꽃 걷기 대회" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>서귀포 유채꽃 걷기 대회</h3>
+                                    <p>2019.03.23~.3.24</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/%EC%B6%95%EC%A0%9C3.jpg" alt="은갈치 축제" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <h3>은갈치 축제</h3>
+                                    <p>2019.05.03~05.05</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row1">
+            <a href="html/cafe.html" class="column1" style="background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.3)), url(images/cafemain.jpg);background-size: cover;"><ruby>아름다운<rt>&lang;한번쯤 가볼만한&rang;</rt>카페</ruby></a>
+            <a href="html/my_jeju.html" class="column1" style="background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.3)),  url(images/review.png)">나의 제주 이야기</a>
+
+            <a href="html/contact.html" class="column1" style="background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.3)),  url(images/travelcenter.jpg);background-size: cover;">관광문의</a>
+        </div>
+         <footer>
+        <div class="container1">
+
+            <div class="footA">
+                <h2>Jeju<span><sub>travel</sub></span></h2>
+                <p>
+                    주소: 제주시 제주읍 제주리 1-1<br>
+                    <a href="../index.html">http://www.jejutravel.net/</a>
+                </p>
+
+                <nav class="footD">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fa fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="footB">
+                <div>
+                    <h3>제주관광정보센터</h3>
+                    <ul>
+                        <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>한국관광공사 제주지사(서귀포)</h3>
+                    <ul>
+                        <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footC">
+                © LOGGER corp. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+    </div>
+
+</body></html>

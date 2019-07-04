@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/subStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gamja+Flower|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script>
+        $(function() {
+            $(".headC").click(function() {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class="headA">Jeju<span><sub>travel</sub></span></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="tour.html">관광 명소</a></li>
+                    <li><a href="food.html">맛집</a></li>
+                    <li><a href="hotels.html">숙박</a></li>
+                    <li><a href="../index.html"> 홈으로</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="conA compact" style="min-height: 200px">
+        <div class="open" id="menu_open" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Menu open</div>
+    </section>
+    <section>
+        <article class="post">
+            <div class="container">
+                <nav id="mySidenav" class="sidenav" style="top=0;position: fixed;">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="my_jeju.html">나의제주이야기</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </nav>
+                <h1>문의</h1>
+                <div class="contact-wrap">
+                    <div class="contact">
+                        <span class="fa fa-city"></span>
+                        <h1>제주관광정보센터</h1>
+                        <h2>전화</h2>
+                        <a href="tel:01012341234"> 064-740-6000</a>
+                    </div>
+                    <div class="contact">
+                        <span class="fa fa-city"></span>
+                        <h1>한국관광공사 제주지사(서귀포)</h1>
+                        <h2>전화</h2>
+                        <a href="tel:01022232222">064-735-7200</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside class="location">
+            <h2>LOCATION</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53239.82419139523!2d126.44972524097729!3d33.48865216100929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cfb0ce2cfb093%3A0xcf1416e1a129a61a!2z7KCc7KO86rSA6rSR7KCV67O07IS87YSw!5e0!3m2!1sko!2skr!4v1561353649519!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425920.16052921786!2d126.20515765652415!3d33.48833354300651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c5ac7481e2eb9%3A0x6134561c230cffc1!2z7ZWc6rWt6rSA6rSR6rO17IKsIOygnOyjvOyngOyCrA!5e0!3m2!1sko!2skr!4v1561353821819!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </aside>
+    </section>
+   <footer>
+        <div class="container">
+
+            <div class="footA">
+                <h2>Jeju<span><sub>travel</sub></span></h2>
+                <p>
+                    주소: 제주시 제주읍 제주리 1-1<br>
+                    <a href="../index.html">http://www.jejutravel.net/</a>
+                </p>
+
+                <nav class="footD">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fa fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="footB">
+                <div>
+                    <h3>제주관광정보센터</h3>
+                    <ul>
+                        <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>한국관광공사 제주지사(서귀포)</h3>
+                    <ul>
+                         <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footC">
+                © LOGGER corp. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("menu_open").style.display = "none";
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("menu_open").style.display = "block";
+        }
+    </script>
+</body></html>
+

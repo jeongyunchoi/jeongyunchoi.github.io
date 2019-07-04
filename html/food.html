@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/subStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gamja+Flower|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+    </style>
+
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function() {
+                $(".headB").slideToggle();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class="headA">Jeju<span><sub>travel</sub></span></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="tour.html">관광 명소</a></li>
+                    <li><a href="food.html">맛집</a></li>
+                    <li><a href="hotels.html">숙박</a></li>
+                    <li><a href="../index.html"> 홈으로</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="conA compact">
+       <a href="../images/jejumap_food.jpg"><img src="../images/jejumap_food.jpg" alt="맛집"></a>
+        <div class="open" id="menu_open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu open</div>
+    </section>
+
+
+    <section class="listA">
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="#"> 전체</a> </li>
+                 <li><a href="#">제주시</a></li>
+                <li><a href="#">서귀포시</a></li>
+                <li><a href="#">우도</a></li>
+                <li><a href="">카페 그 곳...</a></li>
+            </ul>
+        </nav>
+        <h1 class="sr-only">RECENT POSTS</h1>
+        <div class="container">
+            <article>
+                <a href="#">
+                    <div class="photo"  style="background-image: url(../images/goodfood1.jpg);"></div>
+                    <div class="text">
+                        <h2>수우동</h2>
+                        <p>제주시>한림</p>
+                        <p>#돈까스 #우동 #일식</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood2.gif);"></div>
+                    <div class="text">
+                         <h2>명진전복</h2>
+                        <p>제주시>구좌</p>
+                        <p>#전복 #돌솥밥 #회</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood3.jpg);"></div>
+                    <div class="text">
+                         <h2>명랑스낵</h2>
+                        <p>제주시>한림</p>
+                        <p>#떡볶이 #왕새우튀김 #흑돼지튀김</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood4.jpg);"></div>
+                    <div class="text">
+                         <h2>순옥이네 명가</h2>
+                        <p>제주시>제주시내</p>
+                        <p>#전복물회 #성게미역국 #해물뚝배기</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood5.jpg);"></div>
+                    <div class="text">
+                         <h2>고래라면</h2>
+                        <p>서귀포시>성산</p>
+                        <p>#라면 #국수 #비빔국수</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood6.jpg);"></div>
+                    <div class="text">
+                        <h2>제주김만복</h2>
+                        <p>제주시>제주시내</p>
+                        <p>#전복김밥 #통전복주먹밥 #미역국</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood7.jpg);"></div>
+                    <div class="text">
+                       <h2>르쉬느아</h2>
+                        <p>서귀포시>안덕</p>
+                        <p>#중국음식 #딤섬 #북경오리</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood8.jpg);"></div>
+                    <div class="text">
+                        <h2>벵디</h2>
+                        <p>제주시>구좌</p>
+                        <p>#덮밥 #톳밥 #돌문어</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood9.jpg);"></div>
+                    <div class="text">
+                         <h2>제주선</h2>
+                        <p>서귀포시>안덕</p>
+                        <p>#한식 #흑돼지 #한우 #갈치</p>
+                    </div>
+                </a>
+            </article>
+           
+           <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood10.png);"></div>
+                    <div class="text">
+                        <h2>하하호호</h2>
+                        <p>섬속의 섬>우도</p>
+                        <p>#흑돼지수제버거 #수제버거 #땅콩아이스크림</p>
+                    </div>
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood11.jpg);"></div>
+                    <div class="text">
+                        <h2>올래국수</h2>
+                        <p>제주시>제주시내</p>
+                        <p>#고기국수 #한식 #향토음식</p>
+                    </div>
+                </a>
+            </article>
+            
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(../images/goodfood12.jpg);"></div>
+                    <div class="text">
+                        <h2>로뎀가든</h2>
+                        <p>섬속의 섬>우도</p>
+                        <p>#흑돼지주물럭 #한라산볶음밥 #한치해물파전</p>
+                    </div>
+                </a>
+            </article>
+           
+            <div class="pagination">
+               
+                    <a href="#" class="spr_com page-first">&laquo;첫 페이지</a>
+                    <a href="#" class="previous">이전 페이지</a>
+                    <a href="#" title="현재 페이지" class="current">1</a>
+                    <a href="#" title="">2</a>
+                    <a href="#" title="">3</a>
+                    <a href="#" title="">4</a>
+                    <a href="#" title="">5</a>
+                    <a href="#" class="hidden" title="">6</a>
+                    <a href="#" class="hidden" title="">7</a>
+                    <a href="#" class="hidden" title="">8</a>
+                    <a href="#" class="hidden" title="">9</a>
+                    <a href="#" class="hidden" title="">10</a>
+                    <a href="#" class="hidden" class="next">다음 페이지</a>
+                    <a href="#" class="spr_com page-last">마지막 페이지&raquo;</a>
+                </div>
+            </div>
+       
+    </section>
+
+
+   <footer>
+        <div class="container">
+
+            <div class="footA">
+                <h2>Jeju<span><sub>travel</sub></span></h2>
+                <p>
+                    주소: 제주시 제주읍 제주리 1-1<br>
+                    <a href="../index.html">http://www.jejutravel.net/</a>
+                </p>
+
+                <nav class="footD">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fa fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="footB">
+                <div>
+                    <h3>제주관광정보센터</h3>
+                    <ul>
+                        <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>한국관광공사 제주지사(서귀포)</h3>
+                    <ul>
+                         <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footC">
+                © LOGGER corp. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("menu_open").style.display = "none";
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("menu_open").style.display = "block";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/subStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Gamja+Flower|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+    </style>
+
+    <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function() {
+                $(".headB").slideToggle();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class="headA">Jeju<span><sub>travel</sub></span></a>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="tour.html">관광 명소</a></li>
+                    <li><a href="food.html">맛집</a></li>
+                    <li><a href="tour.html">숙박</a></li>
+                    <li><a href="../index.html"> 홈으로</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="conA compact">
+       <a href="../images/logo.png"><img src="../images/logo.png" alt="travel"></a>
+      <div class="open" id="menu_open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu open</div>
+    </section>
+
+
+    <section class="listA">
+        <h1 class="sr-only">RECENT POSTS</h1>
+        <div class="container">
+           <nav id="mySidenav" class="sidenav sticky">
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="../index.html">home</a></li>
+                 <li><a href="#">나의제주이야기</a></li>
+                <li><a href="contact.html">문의</a></li>
+              
+            
+            </ul>
+        </nav>
+            <div class="conF">
+             <h1 style="text-align: center; ">우리들의 푸른섬 제주</h1>
+                <p>즐거운 여행되셨나요? 아직 제주를 꿈꾸지만 어떻게 가야할지 모르는 분들을 위해 여러분의 제주속 이야기와 사진을 공유해주세요.</p>
+         </div>
+          <fieldset><h2 style="font-size: 40px;">나의 제주 이야기</h2>
+           <article class="my_jeju">
+            <table class="my_story">
+                <tr class="headF">
+                    <th id="num">번호</th>
+                   <th id="story">내용</th>
+                   <th id="name">작성자</th>
+                </tr>
+                <tr>
+                   <th>1</th>
+                    <td><a href="#">제주도에서 놀고먹은 나</a></td>
+                    <td>탈주하고싶다</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>한라봉따러 왔어요~!</td>
+                    <td>한라봉봉</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <th>4</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <th>6</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <th>7</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td></td>
+                    <td></td>
+                </tr> 
+                   <tr>
+                    <th>1</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            </article>
+            </fieldset>
+            <div class="pagination">
+               
+                    <a href="#" class="spr_com page-first">&laquo;첫 페이지</a>
+                    <a href="#" class="previous">이전 페이지</a>
+                    <a href="#" title="현재 페이지" class="current">1</a>
+                   
+                    <a href="#" class="next">다음 페이지</a>
+                    <a href="#" class="spr_com page-last">마지막 페이지&raquo;</a>
+                </div>
+            </div>
+       
+    </section>
+
+
+   <footer>
+        <div class="container">
+
+            <div class="footA">
+                <h2>Jeju<span><sub>travel</sub></span></h2>
+                <p>
+                    주소: 제주시 제주읍 제주리 1-1<br>
+                    <a href="../index.html">http://www.jejutravel.net/</a>
+                </p>
+
+                <nav class="footD">
+                    <ul>
+                        <li><a href="#">
+                                <span class="fa fa-twitter" title="Twitter"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-facebook" title="Facebook"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-google-plus" title="Google Plus"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-instagram" title="Instagram"></span>
+                            </a></li>
+
+                        <li><a href="#">
+                                <span class="fa fa-youtube" title="YouTube"></span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav class="footB">
+                <div>
+                    <h3>제주관광정보센터</h3>
+                    <ul>
+                        <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>한국관광공사 제주지사(서귀포)</h3>
+                    <ul>
+                         <li><a href="#">위치</a></li>
+                        <li><a href="#">전화번호</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footC">
+                © LOGGER corp. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("menu_open").style.display = "none";
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("menu_open").style.display = "block";
+        }
+
+    </script>
+
+</body>
+
+</html>
